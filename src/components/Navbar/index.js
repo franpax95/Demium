@@ -1,32 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 import { SearchBar } from '../SearchBar';
 
 import { FaUserAlt } from "react-icons/fa";
-import { IoMdLogIn } from "react-icons/io";
+import { IoMdLogIn, IoMdLogOut } from "react-icons/io";
 
 import './Navbar.css';
 
 const Navbar = () => {
-    const { pathname } = useLocation();
-
-    const isHomeLinkActive = () => {
-        if((pathname === "/") || (pathname === "/home"))
-            return true;
-        else
-            return false;
-    }
-
     return (
         <div className="Navbar">
             <div className="left">
-                <NavLink 
-                    to="/home" 
-                    activeClassName="active" 
-                    isActive={() => isHomeLinkActive()}
-                >
-                    Home
+                <NavLink to="/home" className="logo">
+                    <img src="/img/boostedlogo.png" alt="boosted" />
                 </NavLink>
 
                 <NavLink to="/classes" activeClassName="active">Classes</NavLink>
@@ -37,12 +24,12 @@ const Navbar = () => {
 
             <div className="right">
                 <Link to="/" className="login">
-                    <FaUserAlt />
-                    Log In
+                    <img src="/img/student_avatar.png" alt="José" />
+                    José Antonio Illescas
                 </Link>
                 <Link to="/" className="signup">
-                    <IoMdLogIn />
-                    Sign Up
+                    <IoMdLogOut />
+                    Logout
                 </Link>
             </div>
         </div>

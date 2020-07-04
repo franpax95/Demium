@@ -1,0 +1,133 @@
+.Class{
+    margin-top: 150px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Class .title{
+    font-size: 2em;
+}
+.Class .title span{
+    margin-left: 30vw;
+    font-size: 2em;
+}
+
+.Class .body{
+    padding: 5vh 4vw;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Class .body .left,
+.Class .body .right{
+    width: 50%;
+}
+
+.Class .body .right{
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    min-height: 200px;
+    height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Class .body .right::-webkit-scrollbar { width: 5px; }
+.Class .body .right::-webkit-scrollbar-track { background: lightgray; }/* Track */
+.Class .body .right::-webkit-scrollbar-thumb { background: darkgray; }/* Handle */
+.Class .body .right::-webkit-scrollbar-thumb:hover { background: gray;  }/* Handle on hover */
+
+.Class .body .right .total{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Class .body .right .options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Class .body .right .options button{
+    margin: 0 15px;
+
+    width: 120px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-bottom: solid 2px white;
+    background: none;
+    outline : none;
+    cursor: pointer;
+
+    font-size: 1.2em;
+}
+.Class .body .right .options button:hover,
+.Class .body .right .options button.active:hover{
+    border-bottom: solid 2px cornflowerblue;
+}
+
+.Class .body .right .options button.active{
+    border-bottom: solid 2px #a4c0f4;
+}
+
+.Class .body .right .form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Class .body .right .form-group input{
+    margin: 10px 10px 20px 10px;
+    padding: 5px;
+    width: 70%;
+    
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 5px;
+
+    font-size: 1.2em;
+}
+
+.Class .body .right .form-group input:focus{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Class .body .right .form-group button{
+    width: 120px;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+
+    font-size: 1.2em;
+    font-weight: bold;
+
+    transition: background-color .3s;
+}
+
+.Class .body .right .form-group button:hover{
+    background-color: #1b61e4;
+}

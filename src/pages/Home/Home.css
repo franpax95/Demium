@@ -1,4 +1,75 @@
 .Home{
-    width: 100vw;
     margin-top: 100px;
+    padding: 10vh 10vw;
+}
+
+.Home .maintitle{
+    margin-bottom: 10vh;
+    font-size: 3em;
+}
+
+.Home .maintitle .blue{
+    margin-left: 20px;
+    color: cornflowerblue;
+    font-size: 1.2em;
+}
+
+.Home .section{
+    display: flex;
+    flex-direction: column;
+}
+
+.Home .section .title{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 2.5em;
+}
+
+.Home .section .content{
+    margin-bottom: 10vh;
+    padding: 15px 15px 5px 15px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: hsl(0, 0%, 98%);
+}
+
+.Home .section .content::-webkit-scrollbar { height: 2px; }
+.Home .section .content::-webkit-scrollbar-track { background: lightgray; }/* Track */
+.Home .section .content::-webkit-scrollbar-thumb { background: darkgray; }/* Handle */
+.Home .section .content::-webkit-scrollbar-thumb:hover { background: gray;  }/* Handle on hover */
+
+.Home .section .content > *{
+    margin-right: 20px;
+}
+
+
+.Home .protip{
+    width: 100%;
+    min-height: 15vh;
+    margin-bottom: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgray;
+
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.Home .protip label{
+    margin-right: 40px;
+    font-weight: bold;
+}
+.Home .protip p{
+    max-width: 60vw;
 }

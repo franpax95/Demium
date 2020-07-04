@@ -3,10 +3,12 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 import { useTransition, animated } from 'react-spring';
 
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 import Home from '../pages/Home';
 import Classes from '../pages/Classes';
 import About from '../pages/About';
+import Class from '../pages/Class';
 
 import './App.css';
 
@@ -18,15 +20,18 @@ const App = () => {
         leave: { opacity: 0 },
         config: { duration: 200 }
     });
+
+
     return(<>
         <Navbar />
         <div className="App">
             {transitions.map(({ item: location, props, key }) => (
-                <animated.div key={key} style={props}>
+                <animated.div key={key} style={{ ...props, maxWidth: '95vw' }}>
                     <Switch location={location}>
                         <Route exact path={["/", "/home"]} component={Home} />
                         <Route exact path="/classes" component={Classes} />
                         <Route exact path="/about" component={About} />
+                        <Route exact path="/class" component={Class} />
                     </Switch>
                 </animated.div>
             ))}

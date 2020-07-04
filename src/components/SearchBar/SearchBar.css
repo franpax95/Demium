@@ -1,13 +1,18 @@
 .SearchBar {
-    width: 250px;
+    width: 50%;
+    max-width: 275px;
     padding: 1px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    border: solid 1px #262626;
+    -webkit-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    border: solid 1px whitesmoke;
     border-radius: 5px;
+    background-color: white;
 }
 
 .SearchBar input{

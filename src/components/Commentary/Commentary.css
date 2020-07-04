@@ -1,0 +1,59 @@
+.Commentary{
+    width: 100%;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+}
+
+.Commentary > *{
+    width: 100%;
+}
+
+.Commentary hr{
+    width: 50px;
+    border: 1.5px solid #666666;
+    margin: 0 auto;
+}
+
+.Commentary .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Commentary .header img{
+    width: 50px;
+    height: 50px;
+    
+    margin-left: 30px;
+}
+
+.Commentary .header .name{
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+.Commentary .header .date{
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.Commentary .message{
+    padding: 5px 30px;
+}
+
+.Commentary .icons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Commentary .icons > *{
+    margin: 0 10px;
+    font-size: 24px;
+}
