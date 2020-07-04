@@ -50,7 +50,7 @@ const Home = () => {
                     <SectionCard src="/img/reto-manzanas.jpg" name="Apple Challenge" />
                     <SectionCard src="/img/matematicas.jpg" name="HomeMaths Play" />
                     <SectionCard src="/img/cienciassociales.png" name="Discover the world" />
-                    <SectionCard src="/img/ingles.jpg" name="Inglés" />
+                    <SectionCard src="/img/ingles.jpg" name="Listening (English)" />
                 </div>
             </div>
         </div>

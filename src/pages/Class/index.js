@@ -65,6 +65,14 @@ const Class = () => {
                         message = 'At last I learned to multiply 3 x 7!!! Thanks a lot!!!'
                         likes = {14}
                     />
+                    <hr />
+                    <Commentary 
+                        name = 'Francisco Javier'
+                        date = '2 months ago'
+                        role = 'student'
+                        message = 'Wonderful website. My son is obsessed with his games.'
+                        likes = {'+100k'}
+                    />
                 </div>
             </div>
         </div>
