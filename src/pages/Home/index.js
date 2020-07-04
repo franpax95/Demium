@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { SectionCard, ClassCard } from '../../components/Card';
 
@@ -6,8 +7,6 @@ import './Home.css';
 
 const Home = () => {
     const onWheel = (e) => {
-        e.preventDefault();
-
         const largeContainerScrollPosition = e.currentTarget.scrollLeft;
         e.currentTarget.scrollTo({
             top: 0,
@@ -52,6 +51,11 @@ const Home = () => {
                     <SectionCard src="/img/cienciassociales.png" name="Discover the world" />
                     <SectionCard src="/img/ingles.jpg" name="Listening (English)" />
                 </div>
+            </div>
+
+            <div className="learning-route">
+                <img src="/img/roadMaths.png" alt="Learning Route" />
+                <Link to="/class"></Link>
             </div>
         </div>
     );

@@ -12,12 +12,9 @@ const Navbar = () => {
     return (
         <div className="Navbar">
             <div className="left">
-                <NavLink to="/home" className="logo">
+                <NavLink to="/" className="logo">
                     <img src="/img/boostedlogo.png" alt="boosted" />
                 </NavLink>
-
-                <NavLink to="/classes" activeClassName="active">Classes</NavLink>
-                <NavLink to="/about" activeClassName="active">About</NavLink>
             </div>
 
             <SearchBar />

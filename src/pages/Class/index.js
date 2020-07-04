@@ -68,7 +68,7 @@ const Class = () => {
                     <hr />
                     <Commentary 
                         name = 'Francisco Javier'
-                        date = '2 months ago'
+                        date = '+6 months ago'
                         role = 'student'
                         message = 'Wonderful website. My son is obsessed with his games.'
                         likes = {'+100k'}
