@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 
 import Home from '../pages/Home';
 import Class from '../pages/Class';
+import Progress from '../pages/Progress';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ const App = () => {
                     <Switch location={location}>
                         <Route exact path={["/", "/home"]} component={Home} />
                         <Route exact path="/class" component={Class} />
+                        <Route exact path="/progress" component={Progress} />
                     </Switch>
                 </animated.div>
             ))}

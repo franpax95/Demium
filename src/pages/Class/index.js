@@ -8,8 +8,6 @@ import { MdArrowDropDown } from 'react-icons/md';
 import './Class.css';
 
 const Class = () => {
-
-
     return (
         <div className="Class">
             <div className="body">
@@ -17,7 +15,7 @@ const Class = () => {
                     <h1 className="title">
                         The table of number five
                     </h1>
-                    <ReactPlayer url="https://www.youtube.com/watch?v=T6WCkz_GZYA" style={{ width: '100%', height: 'auto'}} />
+                    <ReactPlayer url="https://www.youtube.com/watch?v=T6WCkz_GZYA" width={'100%'} height={'50vh'} />
                 </div>
                 <div className="right">
                     <div className="form-group">

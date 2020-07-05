@@ -16,7 +16,7 @@
 }
 
 .Class .body{
-    padding: 5vh 4vw;
+    padding: 5vh 10px;
     width: 100%;
 
     display: flex;
@@ -28,6 +28,11 @@
 .Class .body .left,
 .Class .body .right{
     width: 50%;
+}
+
+.Class .body .left > div{
+    width: 50%;
+    height: auto;
 }
 
 .Class .body .right{

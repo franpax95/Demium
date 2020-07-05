@@ -53,6 +53,7 @@ const Home = () => {
                 </div>
             </div>
 
+            <h2 className="learning-route-title">Your learning path</h2>
             <div className="learning-route">
                 <img src="/img/roadMaths.png" alt="Learning Route" />
                 <Link to="/class"></Link>
